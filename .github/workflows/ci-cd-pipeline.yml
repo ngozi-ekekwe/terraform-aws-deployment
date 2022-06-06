@@ -1,0 +1,30 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches: [  ]
+permissions:
+  id-token: write
+  contents: read
+env:
+  AWS_REGION: eu-central-1
+
+jobs:
+  registry:
+    runs-on: ubuntu-20.04
+  steps:
+    - name: Check Out
+      uses: actions/checkout@v2
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: ${{ secrets.AWS_REGION }}
+        aws-region: ${{ env.AWS_REGION }}
+    - name: Create ECR
+      id: create-ecr
+      run: |
+        cd terraform/registry/
+
+        terraform init \
+
+
+
