@@ -10,7 +10,7 @@ permissions:
 
 env:
   AWS_REGION: eu-central-1
-  AWS_ROLE_ARN: arn:aws:iam::433585107196:role/my-github-actions-role
+  AWS_ROLE_ARN: ""
 jobs:
   registry:
     runs-on: ubuntu-20.04
