@@ -22,7 +22,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          role-to-assume: arn:aws:iam::433585107196:oidc-provider/token.actions.githubusercontent.com
           aws-region: ${{ env.AWS_REGION }}
       - name: Create ECR
         id: create-registry
@@ -54,7 +54,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          role-to-assume: arn:aws:iam::433585107196:oidc-provider/token.actions.githubusercontent.com
           aws-region: ${{ env.AWS_REGION }}
       - name: Image build and push
         id: docker-build
@@ -81,7 +81,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          role-to-assume: arn:aws:iam::433585107196:oidc-provider/token.actions.githubusercontent.com
           aws-region: ${{ env.AWS_REGION }}
       - name: Deploy
         id: terraform-deploy
