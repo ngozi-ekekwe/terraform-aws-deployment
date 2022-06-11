@@ -24,7 +24,7 @@ variable "provider_region" {
 
 provider "aws" {
   region = var.provider_region
-  profile = var.provider_profile
+  # profile = var.provider_profile
 }
 
 resource "aws_ecr_repository" "repository" {
