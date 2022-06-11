@@ -37,7 +37,7 @@ jobs:
           -input=false
           
           terraform apply \
-          -var-file=vars.tfvars
+          -var-file=vars.tfvars \
           -input=false \
           -auto-approve 
           
