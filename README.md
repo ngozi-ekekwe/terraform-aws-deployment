@@ -1,4 +1,5 @@
 ### AWS CI/CD deployment with Terraform
+![terraform-aws-deployment](https://github.com/ngozi-ekekwe/terraform-aws-deployment/actions/workflows/ci-cd-pipeline.yml/badge.svg)
 
 ## Local terraform setup
 
