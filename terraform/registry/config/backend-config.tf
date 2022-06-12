@@ -1,5 +1,5 @@
-bucket                      = "my-s3-ng-bucket"
+bucket                      = "my-s3-ng-bucket-v2"
 key                         = "ci-cd-example.tfstate"
 region                      = "eu-central-1"
 encrypt                     = true
-dynamodb_table              = "name-of-the-dynamo-table"
+dynamodb_table              = "my-lock-table"
