@@ -39,6 +39,7 @@ jobs:
           terraform apply \
           -var-file=vars.tfvars \
           -input=false \
+          --lock=false \
           -auto-approve 
           
           export REPOSITORY_NAME=$(terraform output --raw repository_name)
